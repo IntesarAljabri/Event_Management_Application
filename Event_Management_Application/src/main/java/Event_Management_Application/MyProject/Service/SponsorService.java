@@ -13,7 +13,7 @@ import java.util.List;
 public class SponsorService {
     @Autowired
     SponsorRepository sponsorRepository;
-    public List<Sponsor> getAllSchedule() {
+    public List<Sponsor> getAllSponsor() {
 
         return sponsorRepository.findAll();
     }
