@@ -11,7 +11,7 @@ import java.util.List;
 public class AttendeeService {
     @Autowired
     AttendeeRepository attendeeRepository;
-    public List<Attendee> getAllAttendees() {
+    public List<Attendee> getAllAttendee() {
 
         return attendeeRepository.findAll();
     }

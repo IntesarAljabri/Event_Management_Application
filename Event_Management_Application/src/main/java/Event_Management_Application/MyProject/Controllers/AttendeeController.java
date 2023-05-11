@@ -1,4 +1,5 @@
 package Event_Management_Application.MyProject.Controllers;
+import Event_Management_Application.MyProject.Models.Attendee;
 import Event_Management_Application.MyProject.Service.AttendeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +16,7 @@ public class AttendeeController {
     @RequestMapping(value = "getAll", method = RequestMethod.GET)
     public List<Attendee> getAllAttendees() {
 
-        return attendeeService.getAllAttendees();
+        return attendeeService.getAllAttendee();
     }
     @GetMapping(value = "getById")
     public Attendee getAttendeeById(@RequestParam Long id) {
